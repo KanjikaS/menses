@@ -216,7 +216,7 @@ background: radial-gradient(circle, rgb(255, 40, 122) 0%, rgba(201, 31, 82, 0.76
                         <!-- <input type="password"  class ="input" placeholder="Enter your Password here"> -->
                         <input type="password" class="input" id="psw" placeholder="Enter your Password here" name="psw" required>
                         <div class="ic"> <i class="fas fa-eye fa-xs" id="togglePassword"></i></div>
-                        <span class="passinvalid" name="passinvalid">Please enter a valid password!</span>
+                        <span class="passinvalid" name="passinvalid">Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters!</span>
                         <br>
                         <br>
                         <input type="submit" id="submit">
@@ -258,7 +258,7 @@ const togglePassword = document.querySelector('#togglePassword');
     }else if(!regex_pass.test(pass)) {
         console.log(pass);
         document.querySelector(".passinvalid").style.display = "block";
-        document.querySelector(".ic").style.marginLeft = "124%";
+        document.querySelector(".ic").style.marginLeft = "67%";
         return false;
     }else{
       return true;
